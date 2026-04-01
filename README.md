@@ -1,4 +1,4 @@
-This is the repo of portfoli# XXX-XXX Portfolio
+This is the repo of portfoli# Vekthorn Draelys Portfolio
 
 A dark terminal-aesthetic portfolio site for a penetration tester / red team operator.
 
@@ -30,7 +30,7 @@ python3 -m http.server 8080
 
 | Area             | Where to edit                          |
 |------------------|----------------------------------------|
-| Name / handle    | `index.html` — search `XXX-XXX`        |
+| Name / handle    | `index.html` — search `VekthornDraely` |
 | Hero terminal    | `#hero` section in `index.html`        |
 | Stats numbers    | `data-target="N"` attributes           |
 | Skills / tags    | `.skill-tags` spans                    |
