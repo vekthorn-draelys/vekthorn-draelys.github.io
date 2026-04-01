@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XXX-XXX // Security Researcher</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Scanline overlay -->
+  <div class="scanlines"></div>
+  <!-- Matrix canvas background -->
+  <canvas id="matrix-bg"></canvas>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="bracket">[</span>XXX-XXX<span class="bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">_about</a></li>
+      <li><a href="#skills">_skills</a></li>
+      <li><a href="#projects">_ops</a></li>
+      <li><a href="#certs">_certs</a></li>
+      <li><a href="#contact">_contact</a></li>
+    </ul>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span id="status-text">ONLINE</span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="term-title">bash — XXX-XXX@kali:~</span>
+        </div>
+        <div class="terminal-body">
+          <div class="term-line"><span class="prompt">$</span> <span class="cmd">whoami</span></div>
+          <div class="term-output typed" id="t1">XXX-XXX</div>
+          <div class="term-line delay-1"><span class="prompt">$</span> <span class="cmd">cat role.txt</span></div>
+          <div class="term-output typed delay-1" id="t2">Penetration Tester &amp; Red Team Operator</div>
+          <div class="term-line delay-2"><span class="prompt">$</span> <span class="cmd">cat mission.txt</span></div>
+          <div class="term-output typed delay-2" id="t3">Break things ethically. Document everything. Leave no trace.</div>
+          <div class="term-line delay-3"><span class="prompt">$</span> <span class="cmd blink-cursor">_</span></div>
+        </div>
+      </div>
+      <div class="hero-badges">
+        <span class="badge">OSCP</span>
+        <span class="badge">Red Team</span>
+        <span class="badge">C2 Dev</span>
+        <span class="badge">CTF Player</span>
+      </div>
+    </div>
+    <div class="scroll-hint">scroll to enumerate ↓</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>// ABOUT</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="card-label">PROFILE</div>
+        <p>
+          Offensive security professional specializing in adversarial simulation, red team operations, and vulnerability research. Focused on replicating real-world threat actor TTPs to stress-test defenses before attackers do.
+        </p>
+        <p>
+          Experienced with full attack lifecycle — from OSINT and initial access through lateral movement, persistence, and covert exfiltration. Reports designed for both technical and executive audiences.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-item">
+          <div class="stat-num" data-target="50">0</div>
+          <div class="stat-label">Engagements</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="120">0</div>
+          <div class="stat-label">CVEs Reported</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="8">0</div>
+          <div class="stat-label">Years Active</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="99">0</div>
+          <div class="stat-label">HTB Rank %ile</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>// SKILLS &amp; TOOLING</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-category">
+        <div class="cat-title"><span class="cat-icon">⚔</span> Offensive Ops</div>
+        <div class="skill-tags">
+          <span>Recon &amp; OSINT</span><span>Initial Access</span><span>Phishing</span>
+          <span>Privilege Escalation</span><span>Lateral Movement</span><span>Persistence</span>
+          <span>Exfiltration</span><span>AD Attacks</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="cat-title"><span class="cat-icon">🛠</span> Tooling</div>
+        <div class="skill-tags">
+          <span>Cobalt Strike</span><span>Havoc C2</span><span>Metasploit</span>
+          <span>Burp Suite</span><span>Nmap</span><span>BloodHound</span>
+          <span>Mimikatz</span><span>Impacket</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="cat-title"><span class="cat-icon">💻</span> Development</div>
+        <div class="skill-tags">
+          <span>Python</span><span>C/C++</span><span>PowerShell</span>
+          <span>Rust</span><span>Bash</span><span>Assembly</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="cat-title"><span class="cat-icon">🔬</span> Research</div>
+        <div class="skill-tags">
+          <span>Malware Analysis</span><span>Reverse Engineering</span><span>IDA Pro</span>
+          <span>Ghidra</span><span>Binary Exploitation</span><span>Fuzzing</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Skill bars -->
+    <div class="skill-bars">
+      <div class="bar-row">
+        <span class="bar-label">Web Application Testing</span>
+        <div class="bar-track"><div class="bar-fill" data-width="92"></div></div>
+        <span class="bar-pct">92%</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">Network Penetration</span>
+        <div class="bar-track"><div class="bar-fill" data-width="88"></div></div>
+        <span class="bar-pct">88%</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">Active Directory Attacks</span>
+        <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+        <span class="bar-pct">85%</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">Malware Development</span>
+        <div class="bar-track"><div class="bar-fill" data-width="78"></div></div>
+        <span class="bar-pct">78%</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">Reverse Engineering</span>
+        <div class="bar-track"><div class="bar-fill" data-width="74"></div></div>
+        <span class="bar-pct">74%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS / OPS -->
+  <section id="projects">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>// OPERATIONS LOG</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="ops-grid">
+
+      <div class="op-card">
+        <div class="op-header">
+          <span class="op-id">OP-001</span>
+          <span class="op-status classified">CLASSIFIED</span>
+        </div>
+        <h3>Enterprise Red Team — Financial Sector</h3>
+        <p>Full-scope adversary simulation against a Tier-1 financial institution. Achieved domain compromise via spear-phishing → Kerberoasting → DCSync chain in 72 hours.</p>
+        <div class="op-tags">
+          <span>AD</span><span>Phishing</span><span>Kerberoasting</span><span>DCSync</span>
+        </div>
+        <div class="op-result">
+          <span class="result-label">OUTCOME:</span> Domain Admin in 72h. 14 critical findings.
+        </div>
+      </div>
+
+      <div class="op-card">
+        <div class="op-header">
+          <span class="op-id">OP-002</span>
+          <span class="op-status public">PUBLIC</span>
+        </div>
+        <h3>Custom C2 Framework Development</h3>
+        <p>Built a lightweight C2 framework with encrypted beacon over DNS and HTTP fallback. Designed for low-noise persistence in hardened environments.</p>
+        <div class="op-tags">
+          <span>C2</span><span>Python</span><span>DNS Tunneling</span><span>Evasion</span>
+        </div>
+        <div class="op-result">
+          <span class="result-label">OUTCOME:</span> 0 AV detections on initial release.
+        </div>
+      </div>
+
+      <div class="op-card">
+        <div class="op-header">
+          <span class="op-id">OP-003</span>
+          <span class="op-status cvd">CVD</span>
+        </div>
+        <h3>CVE Research — Web Application RCE</h3>
+        <p>Discovered an unauthenticated RCE in a widely deployed CMS plugin via unsafe deserialization. Responsible disclosure led to a patch within 30 days.</p>
+        <div class="op-tags">
+          <span>RCE</span><span>Deserialization</span><span>PHP</span><span>Bug Bounty</span>
+        </div>
+        <div class="op-result">
+          <span class="result-label">OUTCOME:</span> CVE assigned. $4,500 bounty.
+        </div>
+      </div>
+
+      <div class="op-card">
+        <div class="op-header">
+          <span class="op-id">OP-004</span>
+          <span class="op-status public">PUBLIC</span>
+        </div>
+        <h3>HTB Pro Labs — RastaLabs</h3>
+        <p>Completed HackTheBox RastaLabs, a fully simulated enterprise AD environment with 15+ machines. Documented full attack path and TTPs for training materials.</p>
+        <div class="op-tags">
+          <span>HTB</span><span>Active Directory</span><span>CRTE</span>
+        </div>
+        <div class="op-result">
+          <span class="result-label">OUTCOME:</span> Completed. Full writeup published.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CERTS -->
+  <section id="certs">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>// CERTIFICATIONS</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="certs-grid">
+      <div class="cert-card">
+        <div class="cert-logo">OSCP</div>
+        <div class="cert-info">
+          <div class="cert-name">Offensive Security Certified Professional</div>
+          <div class="cert-issuer">Offensive Security</div>
+          <div class="cert-year">2022</div>
+        </div>
+        <div class="cert-bar active"></div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-logo">CRTO</div>
+        <div class="cert-info">
+          <div class="cert-name">Certified Red Team Operator</div>
+          <div class="cert-issuer">Zero-Point Security</div>
+          <div class="cert-year">2023</div>
+        </div>
+        <div class="cert-bar active"></div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-logo">CRTE</div>
+        <div class="cert-info">
+          <div class="cert-name">Certified Red Team Expert</div>
+          <div class="cert-issuer">Altered Security</div>
+          <div class="cert-year">2023</div>
+        </div>
+        <div class="cert-bar active"></div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-logo">eWPT</div>
+        <div class="cert-info">
+          <div class="cert-name">Web Application Penetration Tester</div>
+          <div class="cert-issuer">eLearnSecurity</div>
+          <div class="cert-year">2021</div>
+        </div>
+        <div class="cert-bar active"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2>// CONTACT</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-intro">
+        <p>Available for <span class="highlight">red team engagements</span>, <span class="highlight">penetration testing</span>, and <span class="highlight">security research</span> collaboration.</p>
+        <p class="contact-note">PGP key available on request. Encrypted comms preferred.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:xxx-xxx@proton.me" class="contact-btn">
+          <span class="btn-icon">✉</span> xxx-xxx@proton.me
+        </a>
+        <a href="https://github.com/xxx-xxx" class="contact-btn" target="_blank">
+          <span class="btn-icon">⌥</span> github/xxx-xxx
+        </a>
+        <a href="https://app.hackthebox.com/profile/xxx-xxx" class="contact-btn" target="_blank">
+          <span class="btn-icon">⬡</span> HackTheBox Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span class="bracket">[</span>XXX-XXX<span class="bracket">]</span>
+      <span class="footer-copy">// All operations conducted under signed authorization.</span>
+      <span class="footer-year" id="footer-year"></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
