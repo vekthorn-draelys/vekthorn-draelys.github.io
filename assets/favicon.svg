@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Dark background -->
+  <rect width="32" height="32" rx="4" fill="#090d0f"/>
+
+  <!-- Green border frame -->
+  <rect x="1.5" y="1.5" width="29" height="29" rx="3" fill="none" stroke="#00ff88" stroke-width="1.2"/>
+
+  <!-- Bracket left [ -->
+  <text x="3" y="23" font-family="monospace" font-size="18" font-weight="bold" fill="#00ff88">[</text>
+
+  <!-- X letter in center -->
+  <text x="9.5" y="23" font-family="monospace" font-size="14" font-weight="bold" fill="#00cc6a">X</text>
+
+  <!-- Bracket right ] -->
+  <text x="24" y="23" font-family="monospace" font-size="18" font-weight="bold" fill="#00ff88">]</text>
+
+  <!-- Subtle glow dot bottom-right -->
+  <circle cx="27" cy="27" r="1.5" fill="#00ff88" opacity="0.6"/>
+</svg>
